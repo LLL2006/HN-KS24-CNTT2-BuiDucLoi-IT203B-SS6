@@ -6,12 +6,7 @@ public class Main {
         EvenRunnable evenTask = new EvenRunnable();
         OddRunnable oddTask = new OddRunnable();
 
-        // Tạo các Thread và truyền nhiệm vụ vào
-        Thread thread1 = new Thread(evenTask);
-        Thread thread2 = new Thread(thread1); // Oops, truyền nhầm! Phải là oddTask nhé Lợi
-
-        // Sửa lại cho chuẩn:
-        Thread t1 = new Thread(evenTask);
+                Thread t1 = new Thread(evenTask);
         Thread t2 = new Thread(oddTask);
 
         // Khởi chạy
