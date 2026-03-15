@@ -6,7 +6,7 @@ public class Main {
         EvenRunnable evenTask = new EvenRunnable();
         OddRunnable oddTask = new OddRunnable();
 
-                Thread t1 = new Thread(evenTask);
+        Thread t1 = new Thread(evenTask);
         Thread t2 = new Thread(oddTask);
 
         // Khởi chạy
